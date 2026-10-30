@@ -136,9 +136,9 @@ V 2-D projekcii sú *u* a *o* spolu, *a*, *i*, *e* sa zhlukujú vľavo a väčš
 
 Engine `micrograd` z tohto kroku trénuje MLP 8 → 8 → 2, ktorá sa učí jazdiť napodobňovaním učiteľa. Samotné napodobňovanie dokončí 5/10 nevidených tratí; s DAggerom (jazdí študent, učiteľ opravuje) **7/10**. GIF ukazuje, ako jej neuróny svietia na trati, ktorú nikdy nevidela.
 
-![ch04_imitation](../05-racing-lab/assets/ch04_imitation.gif)
+![ch04_imitation](https://github.com/kavicka/05-racing-lab/raw/main/assets/ch04_imitation.gif)
 
-Celá kapitola: [Racing Lab · kap. 04](../05-racing-lab/README.sk.md#kap-04--neurónová-sieť-na-mojom-micrograde-sa-učí-jazdiť) · kód: [`chapters/ch04_imitation.py`](../05-racing-lab/chapters/ch04_imitation.py)
+Celá kapitola: [Racing Lab · kap. 04](https://github.com/kavicka/05-racing-lab/blob/main/README.sk.md#kap-04--neurónová-sieť-na-mojom-micrograde-sa-učí-jazdiť) · kód: [`chapters/ch04_imitation.py`](https://github.com/kavicka/05-racing-lab/blob/main/chapters/ch04_imitation.py)
 
 ## Čo som sa naučil
 - Autograd = graf hodnôt + lokálna derivácia pri každej operácii + spätný topologický prechod.

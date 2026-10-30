@@ -136,9 +136,9 @@ Projected to 2-D, *u* and *o* sit together, *a*, *i*, *e* cluster on the left, a
 
 The `micrograd` engine from this step trains an MLP 8 → 8 → 2 that learns to drive by copying a teacher. Copying alone finishes 5/10 unseen tracks; with DAgger (the student drives, the teacher corrects) **7/10**. The GIF shows its neurons lighting up on a track it has never seen.
 
-![ch04_imitation](../05-racing-lab/assets/ch04_imitation.gif)
+![ch04_imitation](https://github.com/kavicka/05-racing-lab/raw/main/assets/ch04_imitation.gif)
 
-Full chapter: [Racing Lab · ch. 04](../05-racing-lab/README.md#ch-04--a-neural-network-on-my-micrograd-learns-to-drive) · code: [`chapters/ch04_imitation.py`](../05-racing-lab/chapters/ch04_imitation.py)
+Full chapter: [Racing Lab · ch. 04](https://github.com/kavicka/05-racing-lab/blob/main/README.md#ch-04--a-neural-network-on-my-micrograd-learns-to-drive) · code: [`chapters/ch04_imitation.py`](https://github.com/kavicka/05-racing-lab/blob/main/chapters/ch04_imitation.py)
 
 ## What I learned
 - Autograd = a graph of values + a local derivative per operation + a reverse topological walk.
