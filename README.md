@@ -15,6 +15,13 @@ Samples from the MLP (temperature 0.7): *plavská nad štiarom, veľké kupová,
 
 ![Makemore loss](assets/makemore_loss.png)
 
+## Start here
+This project joins two questions: **how does a neural network learn which of its numbers to change**, and **can it learn the patterns in Slovak municipality names?**
+
+First, it builds a small “calculator” that remembers each calculation. Given an error at the end, it walks the steps backwards and works out the effect of each number. This is **autograd**. Its answers are checked against PyTorch, and a small network built on this calculator learns to separate two interleaved half-moon shapes. The 100% accuracy refers to those 100 training points.
+
+The second part uses **PyTorch** for a different model: given the last three letters of a name, it predicts the next letter. For “Trnava”, training examples include `trn → a`, `rna → v`, and `nav → a`. It is compared with a simple bigram model that only sees the previous letter. Lower **NLL** means better probabilities for the correct next characters; on held-out names it falls from 2.462 to 1.952. Generated names may sound Slovak, but they are not a list of real municipalities.
+
 ## Problem
 Every deep-learning framework is built on the same idea: record how each number was computed, then walk the record backwards with the chain rule. This project builds that idea from zero, then uses it to answer a concrete question: *how much does a neural network beat simple counting at modelling Slovak place names?*
 

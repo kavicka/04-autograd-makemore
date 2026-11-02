@@ -15,6 +15,13 @@ Ukážky z MLP (teplota 0,7): *plavská nad štiarom, veľké kupová, dlhá nov
 
 ![Krivka lossu makemore](assets/makemore_loss.png)
 
+## Najprv jednoducho
+Tento projekt spája dve otázky: **ako sa neurónová sieť dozvie, ktoré svoje čísla má zmeniť**, a **či sa dokáže naučiť vzory slovenských názvov obcí**.
+
+V prvej časti vznikne malá „kalkulačka“, ktorá si pri každom výpočte zapamätá postup. Keď pozná chybu na konci, prejde postup odzadu a vypočíta vplyv každého čísla. To je **autograd**. Jeho výsledky sa kontrolujú proti PyTorchu a malá sieť postavená na tejto kalkulačke sa učí oddeľovať body v tvare dvoch polmesiacov. Presnosť 100 % sa týka týchto 100 tréningových bodov.
+
+V druhej časti sa používa **PyTorch** na iný model: dostane napríklad posledné tri písmená názvu a háda ďalšie. Pri „Trnava“ by sa učil z postupnosti `trn → a`, `rna → v`, `nav → a`. Porovnáva sa s jednoduchým bigramom, ktorý pozná iba posledné písmeno. Nižšie **NLL** znamená lepšiu pravdepodobnosť správnych ďalších znakov; na odložených názvoch kleslo z 2,462 na 1,952. Vygenerované názvy môžu znieť slovensky, ale nie sú zoznamom skutočných obcí.
+
 ## Problém
 Každý deep-learning framework stojí na rovnakej myšlienke: zaznamenaj, ako vzniklo každé číslo, a potom ten záznam prejdi odzadu s chain rule. Tento projekt postaví túto myšlienku od nuly a potom ju použije na konkrétnu otázku: *o koľko je neurónová sieť lepšia ako obyčajné počítanie pri modelovaní slovenských názvov obcí?*
 
