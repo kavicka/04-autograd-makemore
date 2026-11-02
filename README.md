@@ -1,6 +1,6 @@
 # 04 · P1: Autograd from scratch & makemore
 
-🇸🇰 [Slovenská verzia](README.sk.md)
+🇸🇰 [Slovenská verzia](README.sk.md) · 📘 [Step-by-step tutorial](TUTORIAL.md)
 
 ## TL;DR
 A ~150-line scalar **autograd engine** (`Value` + `backward()`) whose gradients match PyTorch exactly (4/4 tests), a small **neural-network library** on top of it that learns a non-linear decision boundary (100 % accuracy), and a **character-level language model** that invents Slovak municipality names.

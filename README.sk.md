@@ -1,6 +1,6 @@
 # 04 · P1: Autograd od nuly a makemore
 
-🇬🇧 [English version](README.md)
+🇬🇧 [English version](README.md) · 📘 [Tutoriál krok za krokom](TUTORIAL.sk.md)
 
 ## TL;DR
 Skalárny **autograd engine** na ~150 riadkov (`Value` + `backward()`), ktorého gradienty sa presne zhodujú s PyTorch (4/4 testy), malá **knižnica neurónových sietí** nad ním, ktorá sa naučí nelineárnu hranicu (100 % presnosť), a **znakový jazykový model**, ktorý vymýšľa názvy slovenských obcí.
